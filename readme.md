@@ -1,18 +1,18 @@
 # PROJECT 2
 
 - **Project Name:**
-- **Project By:**
-- **LINK TO GITHUB:**
-- **LINK TO DEPLOYED SITE:**
-- **list of technologies used:** HTML, JS, CSS, Node, Express, EJS, Mongo 
-- [**LINK TO TRELLO**](http://www.render.com)
+- **Project By:Adrian C. Garcia**
+- **LINK TO GITHUB: https://github.com/adriancgarcia/project2**
+- **LINK TO DEPLOYED SITE: https://project-2-app.onrender.com/**
+- **List of technologies used:** HTML, JS, CSS, Node, Express, EJS, Mongo 
+- **LINK TO TRELLO**
 
 # DESCRIPTION
 
 ## MOCK UP OF UI
 
-- ![Desktop VIew] (http://imgur.com)
-- ![MOBILE VIew] (http://imgur.com)
+- ![Desktop View] (http://imgur.com)
+- ![MOBILE View] (http://imgur.com)
 
 ## LIST OF Backend Endpoints
 
