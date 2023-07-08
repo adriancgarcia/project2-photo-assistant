@@ -40,12 +40,12 @@ Eventuallly, users will be able to share their information with other users crea
 ## ERD (Entity RELATIONSHIP DIAGRAM)
 ``` mermaid
 erDiagram
-    USER ||--o{ INDEX: landing
+    USER ||--{ INDEX: landing
     USER {
         string login
         string Password
     }
-    INDEX ||--|{ USER : landingPage
+    INDEX ||--o|{ USER : landingPage
     INDEX {
         string venueName
         string venueImage
