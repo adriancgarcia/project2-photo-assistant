@@ -79,7 +79,7 @@ erDiagram
 
 
     }
-    Edit || --o{ INDEX : is
+    EDIT || --o{ INDEX : is
     EDIT {
         string venueName
         string venueImage
