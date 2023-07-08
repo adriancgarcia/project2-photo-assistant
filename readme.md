@@ -77,12 +77,12 @@ erDiagram
         Boolean venuePortfolio
         string venueComments
     }
-    HOME || --o{ DELETE : deleteVenue
+    SHOW || --o{ DELETE : deleteVenue
     DELETE {
 
 
     }
-    HOME || --o{ EDIT : editVenue
+    SHOW || --o{ EDIT : editVenue
     EDIT {
         string venueName
         string venueImage
@@ -94,7 +94,7 @@ erDiagram
         Boolean venuePortfolio
         string venueComments
     }
-    HOME || --o{ LOGOUT : is
+    HOME || --o{ LOGOUT : logout
     LOGOUT {
 
     }
