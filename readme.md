@@ -41,18 +41,18 @@ Eventuallly, users will be able to share their information with other users crea
 ``` mermaid
 
 erDiagram
-    User ||--o{ Index: landing page
+    User ||--o{ INDEX: landing page
     User {
         string login
         string Password
     }
-    INDEX/HOME ||--0{ User : is
-    INDEX/HOME {
+    INDEX ||--0{ User : is
+    INDEX {
         string venueName
         string venueImage
         string venueLocation
     }
-    SHOW || --o{ INDEX/HOME : is
+    SHOW || --o{ INDEX : is
     SHOW{
         string venueName
         string venueImage
@@ -64,7 +64,7 @@ erDiagram
         Boolean venuePortfolio
         string venueComments
     }
-    CREATE || --o{ INDEX/HOME : is
+    CREATE || --o{ INDEX : is
     CREATE {
         string venueName
         string venueImage
@@ -76,12 +76,11 @@ erDiagram
         Boolean venuePortfolio
         string venueComments
     }
-    DELETE || --o{ SHOW : is
-    DELETE { 
+    DELETE {
 
 
     }
-    Edit || --o{ SHOW : is
+    Edit || --o{ INDEX : is
     EDIT {
         string venueName
         string venueImage
@@ -93,7 +92,7 @@ erDiagram
         Boolean venuePortfolio
         string venueComments
     }
-    LOGOUT {
+    LOGOUT{
 
     }
     
