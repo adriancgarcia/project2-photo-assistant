@@ -45,8 +45,8 @@ erDiagram
         string login
         string Password
     }
-    Index/Home ||--|{
-    Index {
+    Index ||--|{ LINE-ITEM : contains
+    Home {
         string venueName
         string venueImage
         string venueLocation
