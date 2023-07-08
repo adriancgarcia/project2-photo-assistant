@@ -1,13 +1,20 @@
 # PROJECT 2
 
-- **Project Name:**
-- **Project By:Adrian C. Garcia**
-- **LINK TO GITHUB: https://github.com/adriancgarcia/project2**
-- **LINK TO DEPLOYED SITE: https://project-2-app.onrender.com/**
-- **List of technologies used:** HTML, JS, CSS, Node, Express, EJS, Mongo 
-- **LINK TO TRELLO**
+- **Project Name:** Wedding Venue Tracker
+- **Project By: Adrian C. Garcia**
+- **[GITHUB](https://github.com/adriancgarcia/project2)**
+- **[DEPLOYED SITE](https://project-2-app.onrender.com/)**
+- **[TRELLO](9https://trello.com/invite/b/4jY99k89/ATTI64cdce348b302046f2ecb96f002719a889D092CB/project-2-app)**
+
+
+
 
 # DESCRIPTION
+Wedding Venue Tracker allows photographers and potentially other people in the Wedding industry, to keep track of all the venues they've worked at. Photographers can track specific information such as the name of the venue, the date they workded there, the name of the bride and groom, rate the venue, leave comments, and more. The venues can be updated with new information, and deleted if necessary. 
+
+Eventuallly, users will be able to share their information with other users creating a network. 
+
+
 
 ## MOCK UP OF UI
 
@@ -16,13 +23,86 @@
 
 ## LIST OF Backend Endpoints
 
-|   ENDPOINT  | MEHTOD  |   PURPOSE |
-|-------------|---------|-----------|
-|   /dog    |   get |   List all dogs   |
-|   /dog:id |   get |   list one dog    |
+|   ROUTE   |   ENDPOINT  | METHOD  |   PURPOSE    |
+|-----------|-------------|---------|--------------|
+|   Index   |   /venue    |   GET |   List all venues   |
+|   New     |   /venue:new  |   GET |   Shows form to create a new venue    |
+|   Destroy |   /venue/:id  |   DELETE |   Delete selected venue    |
+|   Update  |   /venue:id   |   PUT |    Update changes to selected venue    |
+|   Create  |   /venue    | POST    |   Creates a new venue     |
+|   Edit    |   /venue:id/edit |   PUT |   Edit selected venue    |
+|   Show    |   /venue/:id  |   GET |   Displays the selected venue's page  |
+
+
+
+
 
 ## ERD (Entity RELATIONSHIP DIAGRAM)
+``` mermaid
+erDiagram
+    User ||--o{ ORDER : landing page
+    User {
+        string login
+        string Password
+    }
+    Index ||--|{ LINE-ITEM : contains
+    Home {
+        string venueName
+        string venueImage
+        string venueLocation
+    }
+    SHOW || --o{ INDEX : is
+    SHOW{
+        string venueName
+        string venueImage
+        string venueLocation
+        string venueDate
+        string venueCouple
+        string venueWebpage
+        Number venueRating
+        Boolean venuePortfolio
+        string venueComments
+    }
+    CREATE || --o{ INDEX : is
+    CREATE {
+        string venueName
+        string venueImage
+        string venueLocation
+        string venueDate
+        string venueCouple
+        string venueWebpage
+        Number venueRating
+        Boolean venuePortfolio
+        string venueComments
+    }
+    DELETE {
+
+
+    }
+    Edit || --o{ INDEX : is
+    EDIT {
+        string venueName
+        string venueImage
+        string venueLocation
+        string venueDate
+        string venueCouple
+        string venueWebpage
+        Number venueRating
+        Boolean venuePortfolio
+        string venueComments
+    }
+    LOGOUT{
+
+    }
+    
+
+```
+
+
 
 ![PICTURE OF ERD](http://imgur.com)
 
 - [Free ERD Diagram Tool](https://dbdiagram.io/home)
+
+## Technologies Used
+HTML, JS, CSS, Node, Express, EJS, Mongo 
