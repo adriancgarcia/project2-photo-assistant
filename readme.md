@@ -40,12 +40,12 @@ Eventuallly, users will be able to share their information with other users crea
 ## ERD (Entity RELATIONSHIP DIAGRAM)
 ``` mermaid
 erDiagram
-    User ||--o{ INDEX: landing page
+    User ||--o{ INDEX: 
     User {
         string login
         string Password
     }
-    INDEX ||--|{ LINE-ITEM : contains
+    INDEX ||--|{ USER : landing page
     INDEX {
         string venueName
         string venueImage
@@ -63,7 +63,7 @@ erDiagram
         Boolean venuePortfolio
         string venueComments
     }
-    CREATE || --o{ INDEX : is
+    CREATE || --o{ INDEX : createVenue
     CREATE {
         string venueName
         string venueImage
@@ -75,11 +75,12 @@ erDiagram
         Boolean venuePortfolio
         string venueComments
     }
+    DELETE || --o{ INDEX : deleteVenue
     DELETE {
 
 
     }
-    EDIT || --o{ INDEX : is
+    EDIT || --o{ INDEX : editVenue
     EDIT {
         string venueName
         string venueImage
@@ -91,7 +92,8 @@ erDiagram
         Boolean venuePortfolio
         string venueComments
     }
-    LOGOUT{
+    LOGOUT || --o{ INDEX : logoutUser
+    LOGOUT {
 
     }
     
