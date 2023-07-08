@@ -40,7 +40,7 @@ Eventuallly, users will be able to share their information with other users crea
 ## ERD (Entity RELATIONSHIP DIAGRAM)
 ``` mermaid
 erDiagram
-    USER ||--o{ INDEX: landing
+    USER ||--o{ INDEX: 
     USER {
         string login
         string Password
