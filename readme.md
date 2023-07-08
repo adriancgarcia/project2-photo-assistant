@@ -20,7 +20,7 @@ Eventuallly, users will be able to share their information with other users crea
 
 
 
-- ![Mobile & Desktop View](/project2-WeddingVenueTracker.pdf)
+- ![Mobile & Desktop View](project2-WeddingVenueTracker.pdf)
 
 ## LIST OF Backend Endpoints
 
