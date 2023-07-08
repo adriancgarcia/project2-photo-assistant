@@ -45,7 +45,7 @@ erDiagram
         string login
         string Password
     }
-    INDEX ||--|{ LINE-ITEM : landingPage
+    INDEX ||--|{ User : landingPage
     INDEX {
         string venueName
         string venueImage
