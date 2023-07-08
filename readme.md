@@ -93,7 +93,6 @@ erDiagram
         Boolean venuePortfolio
         string venueComments
     }
-    LOGOUT || --o{ INDEX/HOME : is 
     LOGOUT {
 
     }
