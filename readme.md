@@ -4,7 +4,7 @@
 - **Project By: Adrian C. Garcia**
 - **[GITHUB](https://github.com/adriancgarcia/project2)**
 - **[DEPLOYED SITE](https://project-2-app.onrender.com/)**
-- **[TRELLO](9https://trello.com/invite/b/4jY99k89/ATTI64cdce348b302046f2ecb96f002719a889D092CB/project-2-app)**
+- **[TRELLO](https://trello.com/b/4jY99k89/project-2-app)**
 
 
 
