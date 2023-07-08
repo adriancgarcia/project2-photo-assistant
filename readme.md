@@ -18,8 +18,9 @@ Eventuallly, users will be able to share their information with other users crea
 
 ## MOCK UP OF UI
 
-- ![Desktop View] (http://imgur.com)
-- ![MOBILE View] (http://imgur.com)
+
+
+- ![Mobile & Desktop View](/project2-WeddingVenueTracker.pdf)
 
 ## LIST OF Backend Endpoints
 
@@ -98,15 +99,7 @@ erDiagram
     LOGOUT {
 
     }
-    
-
 ```
-
-
-
-![PICTURE OF ERD](http://imgur.com)
-
-- [Free ERD Diagram Tool](https://dbdiagram.io/home)
 
 ## Technologies Used
 HTML, JS, CSS, Node, Express, EJS, Mongo 
