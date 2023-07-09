@@ -26,21 +26,65 @@ console.log(venue)
 res.render('venue/index.ejs', {venue});
 });
 
+// NEW - GET
+app.get('/venues/new', (req, res) => {
+    res.render('venue/new.ejs', {venue})
+});
+
+// DESTROY - DELETE
+app.delete("/venues/:id", (req, res) => {
+    const id = req.params.id
+    venue.splice(id, 1)
+    res.redirect("/venues")
+});
+
+// UPDATE - PUT
+app.put("/venues/:id", (req, res) => {
+    const id = req.params.id;
+    venue[id] = {
+        name: req.body.name,
+        img: req.body.img,
+        location: req.body.location,
+        dateOfWedding: req.body.dateOfWedding,
+        nameOfParty: req.body.nameOfParty,
+        venueWebsite: req.body.venueWebsite,
+        venueRating: req.body.venueRating,
+        addToPortfolio: req.body.addToPortfolio,
+        comments: req.body.comments, 
+    }
+    res.redirect("/venues")
+});
+
+// CREATE POST
+app.post("/venues/", (req, res) => {
+    let newVenue = {
+        name: req.body.name,
+        img: req.body.img,
+        location: req.body.location,
+        dateOfWedding: req.body.dateOfWedding,
+        nameOfParty: req.body.nameOfParty,
+        venueWebsite: req.body.venueWebsite,
+        venueRating: req.body.venueRating,
+        addToPortfolio: req.body.addToPortfolio,
+        comments: req.body.comments, 
+    }
+    venue.push(newVenue)
+    res.redirect("/venues")
+});
+
+// EDIT
+app.get("/venues/:id/edit", (req, res) => {
+    const id = req.params.id;
+    const Venue = venue[id];
+    res.render("venue/edit.ejs", {Venue, id})
+});
+
 // SHOW 
 app.get("/venues/:id", (req, res) => {
     const id = req.params.id;
     const Venue = venue[id];
     res.render('venue/show.ejs', { Venue, id });
 });
-
-
-
-
-
-
-
-
-
 
 
 // Listen

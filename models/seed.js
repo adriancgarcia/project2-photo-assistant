@@ -3,6 +3,8 @@ const Venue = require("./venue");
 
 mongoose.connection.on('open', async () => {
 
+    await Venue.deleteMany();
+
 const allVenues = [
     {
         name: "Bridge 410",

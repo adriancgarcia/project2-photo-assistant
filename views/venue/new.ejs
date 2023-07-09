@@ -1,10 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
-    <%- include('./partials/head.ejs') %>
+    <%- include('../partials/head.ejs') %>
     <body>
-    <%- include('./partials/header.ejs') %>
+    <%- include('../partials/header.ejs') %>
+
+    <form action="/venues" method="POST">
+        <fieldset>
+            <legend>Add a new Venue</legend>
+            <h3>Venue Name: <input type="text" name="name"></h3>
+            <h3>Add Image: <input type="url" accept="image/*" name="img"></h3>
+            <h3>Location: <input type="text" name="location"></h3>
+            <h3>Date of Wedding: <input type="date" name="dateOfWedding"></h3>
+            <h3>Name of Party: <input type="text" name="nameOfParty"></h3>
+            <h3>Venue website: <input type="text" name="venueWebsite"></h3>
+            <h3>Rating: Based on 1 - 5 with 1 being the worse rating and 5 being the Best rating.  
+                <input type="number" name="venueRating"></h3>
+            <h3>Include event in Portfolio: <input type="checkbox" name="addToPortfolio"></h3>
+            <h3>Add Comments: <input type="text" name="comments"></h3>
 
 
+            <input type="submit" value="Add Venue" />
+        </fieldset>
+    </form>
 
     
     </body>

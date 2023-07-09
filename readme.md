@@ -1,6 +1,6 @@
 # PROJECT 2
 
-- **Project Name:** Wedding Venue Tracker
+- **Project Name:** Photo Assistant
 - **Project By: Adrian C. Garcia**
 - **[GITHUB](https://github.com/adriancgarcia/project2)**
 - **[DEPLOYED SITE](https://project-2-app.onrender.com/)**
