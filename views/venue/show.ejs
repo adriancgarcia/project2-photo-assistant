@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%- include('../partials/head.ejs') %>
+    <body>
+    <%- include('../partials/header.ejs') %>
+
+        <h2><%= Venue.name %></h2>
+        <img src="<%= Venue.img %>" alt="venue image"/>
+        <h3> Location: <%= Venue.location %></h3>
+        <h3> Date of Wedding: <%= Venue.dateOfWedding %></h3>
+        <h3> Name of Party: <%= Venue.nameOfParty %> </h3>
+        <h3> Venue Website: <%= Venue.venueWebsite %></h3>
+        <h3> Rating: <%= Venue.venueRating %></h3>
+        <h3> Include in portfolio: <%= Venue.addToPortfolio ?  "Add to Portfolio" : "Do not add to Portfolio" %></h3>
+        <h3> Comments: <%= Venue.comments %></h3>
+
+        <a href="/venues/<%=Venue._id %>/edit"><button>Edit</button></a>
+    
+        <form action="/venues/<%=Venue.id %>?_method=DELETE" method="POST">
+            <input type="submit" Value="DELETE" />
+        </form>
+
+        <a href="/venues"><button>Back To Main</button></a>
+    </body>
+</html>
