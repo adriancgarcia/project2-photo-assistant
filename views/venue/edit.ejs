@@ -4,7 +4,7 @@
     <body>
     <%- include('../partials/header.ejs') %>
 
-    <form action="/venues/<%= id %>?_method=PUT" method="post">
+    <form action="/venues/<%= Venue._id %>?_method=PUT" method="post">
         <fieldset>
             <legend>Edit <%= Venue.name %></legend>
             <h3>Venue Name: <input type="text" name="name" value="<%= Venue.name %>"/></h3>

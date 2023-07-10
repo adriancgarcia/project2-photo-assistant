@@ -4,20 +4,20 @@
     <body>
     <%- include('../partials/header.ejs') %>
 
-        <h2><%= Venue.name %></h2>
-        <img src="<%= Venue.img %>" alt="venue image"/>
-        <h3> Location: <%= Venue.location %></h3>
-        <h3> Date of Wedding: <%= Venue.dateOfWedding %></h3>
-        <h3> Name of Party: <%= Venue.nameOfParty %> </h3>
-        <h3> Venue Website: <%= Venue.venueWebsite %> </h3>
-        <h3> Rating: <%= Venue.venueRating %></h3>
-        <h3> Include in portfolio: <%= Venue.addToPortfolio ?  "Add to Portfolio" : "Do not add to Portfolio" %></h3>
-        <h3> Comments: <%= Venue.comments %></h3>
+        <h2><%= venue.name %></h2>
+        <img src="<%= venue.img %>" alt="venue image"/>
+        <h3> Location: <%= venue.location %></h3>
+        <h3> Date of Wedding: <%= venue.dateOfWedding %></h3>
+        <h3> Name of Party: <%= venue.nameOfParty %> </h3>
+        <h3> Venue Website: <%= venue.venueWebsite %> </h3>
+        <h3> Rating: <%= venue.venueRating %></h3>
+        <h3> Include in portfolio: <%= venue.addToPortfolio ?  "Add to Portfolio" : "Do not add to Portfolio" %></h3>
+        <h3> Comments: <%= venue.comments %></h3>
 
 
-        <a href="/venues/<%= id %>/edit"><button>Edit</button></a>
+        <a href="/venues/<%= venue._id %>/edit"><button>Edit</button></a>
     
-        <form action="/venues/<%= id %>?_method=DELETE" method="POST">
+        <form action="/venues/<%= venue._id %>?_method=DELETE" method="POST">
             <input type="submit" value="DELETE" />
         </form>
 

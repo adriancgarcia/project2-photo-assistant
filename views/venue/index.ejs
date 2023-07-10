@@ -5,11 +5,18 @@
     <%- include('../partials/header.ejs') %>
 
     <div class="listVenues">
-        <% for (let i=0; i < venue.length; i++) { %>
-            <a href="/venues/<%= i %>">
-                <h2> <%= venue[i].name %></h2>
-                <img src="<%= venue[i].img %>" alt="wedding venue image"></a>
+
+        <% for (Venue of venue) { %>
+            <a href="/venues/<%= Venue._id %>">
+                <h2> <%= Venue.name %></h2>
+            </a>
+            <a href="/venues/<%=Venue._id %>">
+                <img src="<%= Venue.img %>"
+                alt="wedding venue image">
+            </a>
+        
         <% } %>
+        
             <h3><a href="/venues/new">Add new Venue</a></h3>
     </div>
     

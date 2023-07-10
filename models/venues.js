@@ -1,7 +1,7 @@
 const mongoose = require("./connection");
 
 // VENUE SCHEMA
-const venueSchema = new mongoose.Schema ({
+const venueSchema = new mongoose.Schema({
         name: String,
         img: String,
         location: String,
