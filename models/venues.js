@@ -11,6 +11,7 @@ const venueSchema = new mongoose.Schema({
         venueRating: Number,
         addToPortfolio: Boolean,
         comments: String,
+        username: String,
     });
     
 // VENUE MODEL
