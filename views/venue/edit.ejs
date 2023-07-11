@@ -6,7 +6,7 @@
 
     <form action="/venues/<%= Venue._id %>?_method=PUT" method="post">
         <fieldset>
-            <legend>Edit <%= Venue.name %></legend>
+            <legend><h4>Edit <%= Venue.name %></h4></legend>
             <h3>Venue Name: <input type="text" name="name" value="<%= Venue.name %>"/></h3>
             <h3>Add Image: <input type="text" name="img" value="<%= Venue.img %>"/></h3>
             <h3>Location: <input type="text" name="location" value="<%= Venue.location %>"/></h3>
@@ -23,7 +23,7 @@
                     />
                 </h3>
             <h3>Add Comments: <input type="text" name="comments" value="<%= Venue.comments %>"/></h3>
-            <input type="submit" value="Edit <%= Venue.name %>" />
+            <input type="submit" class="submit"  value="Edit <%= Venue.name %>" />
         </fieldset>
     </form>
 

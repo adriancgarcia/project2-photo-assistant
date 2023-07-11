@@ -1,0 +1,120 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-image: url("https://i.imgur.com/qyx4uO7.jpeg");
+    background-repeat: no-repeat, repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.register {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border: 1px solid whitesmoke;
+    padding: 20px;
+    height: 300px;
+    width: 200px;
+    color: whitesmoke;
+    background-color: rgba(10, 10, 10, 0.7);
+}
+
+.register a {
+    padding: 0 20px 20px 20px;
+}
+
+button {
+    padding: 5px 40px 5px 40px;
+} 
+
+.login {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px 20px 40px 20px; 
+    background-color: rgba(10, 10, 10, 0.7);
+}
+
+.login label {
+    padding: 20px;
+}
+
+.submit {
+    margin: 10px 0 10px 0;
+    padding: 5px;
+    width: 150px;
+    font-family: 'Play', sans-serif;
+}
+
+.signup {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px 20px 40px 20px; 
+    background-color: rgba(10, 10, 10, 0.7);
+}
+
+.signup label {
+    padding: 20px;
+}
+
+.listVenues {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.listVenues img {
+    width: 300px;
+    height: auto;
+}
+
+.show-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border: 2px solid whitesmoke;
+    background-color: rgba(10, 10, 10, 0.7);
+    /* margin:10px; */
+    padding:20px;
+}
+
+.show-container img {
+    width: 300px;
+    height: auto;
+}
+
+.show-container h3, h2 {
+    color: whitesmoke;
+}
+
+.show-container 
+h1, h2, h3, h4 {
+    font-family: 'Play', sans-serif;
+}
+
+h1 {
+    color: whitesmoke;
+    font-family: 'Play', sans-serif;
+}
+
+button {
+    font-family: 'Play', sans-serif;
+}
+
+legend {
+    color: whitesmoke;
+    font-family: 'Play', sans-serif;
+}
+
+label {
+    color: whitesmoke;
+    font-family: 'Play', sans-serif;
+}

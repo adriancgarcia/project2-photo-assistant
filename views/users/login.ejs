@@ -6,13 +6,12 @@
         <%- include('../partials/header.ejs') %>
             <main>
                 <div>
-
                     <form action="/user/login" method="post">
-                        <fieldset>
+                        <fieldset class="login">
                             <legend>Log in:</legend>
                             <label>USERNAME: <input type="text" name="username" required /></label>
                             <label>PASSWORD: <input type="password" name="password" required /></label>
-                            <input type="submit" value="Login" />
+                            <input type="submit" class="submit" value="Login" />
                         </fieldset>
                     </form>
                 </div>

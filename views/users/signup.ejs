@@ -6,13 +6,12 @@
         <%- include('../partials/header.ejs') %>
             <main>
                 <div>
-
                     <form action="/user/signup" method="post">
-                        <fieldset>
+                        <fieldset class="signup">
                             <legend>New User</legend>
-                            <label>USERNAME: <input type="text" name="username" required /></label>
-                            <label>PASSWORD: <input type="password" name="password" required /></label>
-                            <input type="submit" value="Create Account" />
+                                <label>USERNAME: <input type="text" name="username" required /></label>
+                                <label>PASSWORD: <input type="password" name="password" required /></label>
+                            <input type="submit" class="submit" value="Create Account" />
                         </fieldset>
                     </form>
                 </div>
