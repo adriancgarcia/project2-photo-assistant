@@ -4,22 +4,20 @@
     <body>
     <%- include('../partials/header.ejs') %>
     
-    <a href="/user/logout"><button>Logout</button></a>
-    <div class="listVenues">
-        <% for (Venue of venue) { %>
-            <a href="/venues/<%= Venue._id %>">
-                <h2> <%= Venue.name %></h2>
-            </a>
-            <a href="/venues/<%=Venue._id %>">
-                <img src="<%= Venue.img %>"
-                alt="wedding venue image">
-            </a>
-        
-        <% } %>
-        
-            <h3><a href="/venues/new">Add new Venue</a></h3>
-            
-    </div>
-    
+        <div class="userVenues">
+            <a href="/user/logout"><button>Logout</button></a>
+                <div class="listVenues">
+                    <% for (Venue of venue) { %>
+                        <div class="venueDisplay">
+                            <a href="/venues/<%= venue._id %>">
+                                <h2> <%= Venue.name %></h2></a>
+
+                            <a href="/venues/<%= Venue._id %>">
+                                <img src="<%= Venue.img %>" alt="wedding venue image"/></a>
+                        </div>
+                    <% } %>
+                </div>
+                <h2><a href="/venues/new"><button>Add new Venue</button></a></h2>
+        </div>
     </body>
 </html>

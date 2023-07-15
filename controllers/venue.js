@@ -67,6 +67,13 @@ router.get("/:id/edit", async (req, res) => {
     res.render("venue/edit.ejs", { venue })
 });
 
+// test
+// router.get("/:id/test", async (req, res) => {
+//     const id = req.params.id;
+//     const venue = await Venue.findById(req.params.id);
+//     res.render("venue/test.ejs", { venue })
+// });
+
 // SHOW 
 router.get("/:id", async (req, res) => {
     const id = req.params.id;

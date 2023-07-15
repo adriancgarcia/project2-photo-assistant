@@ -5,15 +5,18 @@
     <body>
         <%- include('../partials/header.ejs') %>
             <main>
-                <div>
-                    <form action="/user/signup" method="post">
-                        <fieldset class="signup">
-                            <legend>New User</legend>
-                                <label>USERNAME: <input type="text" name="username" required /></label>
-                                <label>PASSWORD: <input type="password" name="password" required /></label>
-                            <input type="submit" class="submit" value="Create Account" />
-                        </fieldset>
-                    </form>
+                <div class="container">
+                    <div class="sidebarRegister"></div>
+                        <div class="registration">
+                            <form action="/user/signup" method="post">
+                                <fieldset class="signup">
+                                    <legend>New User</legend>
+                                        <label>USERNAME: <input type="text" name="username" required /></label>
+                                        <label>PASSWORD: <input type="password" name="password" required /></label>
+                                    <a href="/user/login"><button>Create Account</button></a>
+                                </fieldset>
+                            </form>
+                        </div>
                 </div>
             </main>
     </body>

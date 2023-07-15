@@ -4,29 +4,43 @@
     <body>
     <%- include('../partials/header.ejs') %>
 
-    <form action="/venues/<%= Venue._id %>?_method=PUT" method="post">
-        <fieldset>
-            <legend><h4>Edit <%= Venue.name %></h4></legend>
-            <h3>Venue Name: <input type="text" name="name" value="<%= Venue.name %>"/></h3>
-            <h3>Add Image: <input type="text" name="img" value="<%= Venue.img %>"/></h3>
-            <h3>Location: <input type="text" name="location" value="<%= Venue.location %>"/></h3>
-            <h3>Date of Wedding: <input type="date" name="dateOfWedding" value="<%= Venue.dateOfWedding %>"/></h3>
-            <h3>Name of Party: <input type="text" name="nameOfParty" value="<%= Venue.nameOfParty %>"/></h3>
-            <h3>Venue website: <input type="text" name="venueWebsite" value="<%= Venue.venueWebsite %>"/></h3>
-            <h3>Rating: Based on 1 - 5 with 1 being the worse rating and 5 being the Best rating.  
-            <input type="number" name="venueRating" value="<%= Venue.venueRating %>"/></h3>
-            <h3>Include event in Portfolio: 
-                <input 
-                    type="checkbox" 
-                    name="addToPortfolio"
-                    <%=Venue.addToPortfolio ? "checked" : "" %>
-                    />
-                </h3>
-            <h3>Add Comments: <input type="text" name="comments" value="<%= Venue.comments %>"/></h3>
-            <input type="submit" class="submit"  value="Edit <%= Venue.name %>" />
-        </fieldset>
-    </form>
+        <div class="container">
+            <div class="sidebarEdit"></div>
+                <div class="registration">
+                    <form action="/venues/<%= venue._id %>?_method=PUT" method="POST">
+                        <fieldset class="account-info">
+                            <legend>Edit</legend>
 
-    
+                            <label for="venueName">Venue Name:</label>
+                            <input type="text" name="name" value="<%= venue.name %>"/>
+                            
+                            <label>Add Image: </label><input type="text" name="img" value="<%= venue.img %>"/>
+                            
+                            <label>Location: </label><input type="text" name="location" value="<%= venue.location %>"/>
+                            
+                            <label>Date of Wedding: </label><input type="date" name="dateOfWedding" value="<%= venue.dateOfWedding %>"/>
+                            
+                            <label>Name of Party:</label> <input type="text" name="nameOfParty" value="<%= venue.nameOfParty %>"/>
+                            
+                            <label>Venue website: </label><input type="text" name="venueWebsite" value="<%= venue.venueWebsite %>"/>
+                            
+                            <label>Rating: Based on 1 - 5.
+                            <br>1 is the Worse and 5 is the Best rating. </label>
+                            <input type="number" name="venueRating" value="<%= venue.venueRating %>"/>
+
+                            <label>Include event in Portfolio: </label>
+                                <input 
+                                    type="checkbox" 
+                                    name="addToPortfolio"
+                                    <%=venue.addToPortfolio ? "checked" : "" %>
+                                    />
+                            
+                            <label>Add Comments: </label> <textarea name="comments" rows="10" cols="48" value="<%= venue.comments %>"></textarea>
+                            
+                            <input type="submit" class="submit"  value="Edit" />
+                        </fieldset>
+                    </form>
+                </div>
+        </div>
     </body>
 </html>
