@@ -4,12 +4,13 @@
     <body>
     <%- include('../partials/header.ejs') %>
 
+    <a href="/venues"><button>Back To Main</button></a>
         <div class="container">
             <div class="sidebarEdit"></div>
                 <div class="registration">
                     <form action="/venues/<%= venue._id %>?_method=PUT" method="POST">
                         <fieldset class="account-info">
-                            <legend>Edit</legend>
+                            <legend>Edit: <%= venue.name %></legend>
 
                             <label for="venueName">Venue Name:</label>
                             <input type="text" name="name" value="<%= venue.name %>"/>
