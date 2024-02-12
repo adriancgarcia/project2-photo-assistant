@@ -5,17 +5,19 @@
     <body>
         <%- include('../partials/header.ejs') %>
             <main>
-                <div class="container">
-                    <div class="sidebarRegister"></div>
-                        <div class="registration">
+                <div class="container2">
+                    <!-- <div class="sidebarRegister"></div> -->
+                        <div class="registration2">
                             <form action="/user/signup" method="post">
                                 <fieldset class="signup">
                                     <legend>New User</legend>
                                         <label>USERNAME: <input type="text" name="username" required /></label>
                                         <label>PASSWORD: <input type="password" name="password" required /></label>
                                     <a href="/user/login"><button>Create Account</button></a>
+                                    
                                 </fieldset>
                             </form>
+                            <!-- <a href="/index/"><button>Back</button></a> -->
                         </div>
                 </div>
             </main>

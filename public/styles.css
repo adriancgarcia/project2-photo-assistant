@@ -7,19 +7,101 @@
     --purple: #B67D9A;
   }
 
+html, body {
+    min-height: 100%;
+}
+
 body {
     display: flex;
     align-items: center;
-    justify-content: center;
+    /* justify-content: center; */
     flex-direction: column;
-    background-image: url("https://i.imgur.com/qyx4uO7.jpeg");
+    background: rgb(238,174,233);
+    background: radial-gradient(circle, rgba(238,174,233,1) 0%, rgba(87,85,189,1) 100%);
     background-repeat: no-repeat;
-    background-position: center;
     background-size: cover;
-    margin: 0 auto;
     height: 100%;
-    /* background: #e9e9e9; */
+    margin: 0;
 }
+
+/* body h1 {
+    color: #000000;
+} */
+
+/* body img {
+    height: 100%;
+} */
+
+/* .container img {
+    height: 100%;
+} */
+
+.container {
+    width: 80vw;
+    height: 70vw;
+    margin: 50px auto;
+    display: flex;
+    border-radius: 10px;
+    border: 1px solid #000000;
+    box-shadow: 10px 5px 5px #555656;
+  }
+
+  .container2 {
+    height: auto;
+    width: 100%;
+  }
+
+  .registration2 {
+    width: 100%;
+  }
+
+  .sidebarRegister {
+    width: 50%;
+    background: url('https://i.imgur.com/2kZthsz.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 10px 0 0 10px;
+  }
+
+  .registration {
+    width: 50%;
+    background: #f9f9f9;
+    border-radius: 0 10px 10px 0;
+    padding: 15px;
+    box-sizing: border-box;
+    overflow: auto;
+    font-family: 'Play', sans-serif;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .registration h1 {
+    color: rgb(33, 32, 32);
+    font-family: 'Play', sans-serif;
+}
+
+/* .signup {
+    width: 100%;
+    height: 100%;
+} */
+
+  .sidebarEdit {
+    width: 50%;
+    background: url('https://i.imgur.com/2kZthsz.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 10px 0 0 10px;
+  }
+
+  .sidebarNew {
+    width: 50%;
+    background: url('https://i.imgur.com/9qLpzGo.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 10px 0 0 10px;
+  }
 
 .userVenues {
     display: flex;
@@ -33,13 +115,14 @@ body {
     width: auto;
     height: 100%;
     /* background-image: url("https://i.imgur.com/qyx4uO7.jpeg"); */
-    background-repeat: no-repeat;
+    /* background-repeat: no-repeat;
     background-position: center;
-    background-size: cover;
+    background-size: cover; */
 }
 
 .listVenues{
     display: flex;
+    /* flex-wrap:; */
     text-align: center;
     margin: 0 auto;
     padding: 20px 80px 20px 80px;
@@ -71,55 +154,8 @@ body {
     /* padding: 20px 60px 0 60px; */
 }
 
-.container {
-    width: 80vw;
-    height: 70vw;
-    margin: 50px auto;
-    display: flex;
-    border-radius: 10px;
-    box-shadow: 1px 1px 20px #6E3E11,
-                -1px -1px 20px #6E3E11,
-                1px -1px 20px #6E3E11,
-                -1px 1px 20px #6E3E11;
-  }
-
-  .sidebarEdit {
-    width: 50%;
-    background: url('https://i.imgur.com/2kZthsz.jpeg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    border-radius: 10px 0 0 10px;
-  }
-
-  .sidebarNew {
-    width: 50%;
-    background: url('https://i.imgur.com/9qLpzGo.jpeg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    border-radius: 10px 0 0 10px;
-  }
-
-  .sidebarRegister {
-    width: 50%;
-    background: url('https://i.imgur.com/2kZthsz.jpeg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    border-radius: 10px 0 0 10px;
-  }
-
-  .registration {
-    width: 50%;
-    background: #f9f9f9;
-    border-radius: 0 10px 10px 0;
-    padding: 15px;
-    box-sizing: border-box;
-    overflow: auto;
-    font-family: 'Play', sans-serif;
-  }
-
-  .registration h1 {
-    color: rgb(33, 32, 32);
-    font-family: 'Play', sans-serif;
+.venueDisplay h2{
+    color: #000000;
 }
 
 h1 {
@@ -210,13 +246,11 @@ h1, h2, h3, h4 {
     margin-right: auto;
     width: 75%;
     /* padding: 20px 15px 10px 15px; */
-
 }
 
 img {
     width: 100%;
     height: auto;
-    
 }
 
 button {
@@ -276,10 +310,10 @@ label {
     padding: 20px;
 }
 
-h1 {
+/* h1 {
     color: whitesmoke;
     font-family: 'Play', sans-serif;
-}
+} */
 
 a {
     text-decoration: none;
