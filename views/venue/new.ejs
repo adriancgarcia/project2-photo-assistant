@@ -5,15 +5,15 @@
     <%- include('../partials/header.ejs') %>
 
     <a href="/venues"><button>Back To Main</button></a>
-    <div class="container">
-        <div class="sidebarNew"></div>
-        <div class="registration">
+    <div class="newContainer">
+        <!-- <div class="sidebarNew"></div> -->
+        <div class="newEntry">
           <h1>New Venue</h1>
                 <form action="/venues" method="POST">
                     <fieldset class="account-info">
-                        <legend>Venue Information</legend>
+                        <!-- <legend>Venue Information</legend> -->
                         <label>Venue Name: <input type="text" name="name"></label>
-                        <label>Add Image: <input type="url" accept="image/*" name="img"></label>
+                        <label>Add Image url: <input type="url" accept="image/*" name="img"></label>
                         <label>Location: <input type="text" name="location"></label>
                         <label>Date of Wedding: <input type="date" name="dateOfWedding"></label>
                         <label>Name of Party: <input type="text" name="nameOfParty"></label>
@@ -22,7 +22,7 @@
                         <label>Include event in Portfolio: <input type="checkbox" name="addToPortfolio"></label>
                         <!-- <label>Add Comments: <input type="text" name="comments"></label> -->
 
-                        <label>Add Comments: <textarea name="comments" rows="10" cols="48"></textarea></label>
+                        <label>Add Comments: <textarea name="comments" rows="10" cols="40"></textarea></label>
 
                         <input type="submit" class="submit" value="Add Venue" />
                         <!-- <a href="/venues"><button>Add Venue</button></a> -->
