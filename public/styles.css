@@ -44,25 +44,20 @@ body {
     border-radius: 10px;
     border: 1px solid #000000;
     box-shadow: -20px 20px 30px -10px #555656;
+    
   }
   
-  .container2 {
-    height: auto;
-    width: 100%;
-    margin: 30px;
-    display: flex;
-    border-radius: 10px;
-    border: 1px solid #000000;
-    box-shadow: -20px 20px 30px -10px #555656;
-    background-color: whitesmoke;
-    padding: 20px;
-  }
 
-  .registration2 {
+/* .registration2 {
     width: 100%;
-  }
+  } */
 
-  .sidebarRegister {
+/* .login {
+    width: 25%;
+} */
+  
+
+.sidebarRegister {
     width: 50%;
     background: url('https://i.imgur.com/2kZthsz.jpeg');
     background-size: cover;
@@ -84,7 +79,7 @@ body {
     justify-content: center;
   }
 
-  .registration h1 {
+.registration h1 {
     color: rgb(33, 32, 32);
     font-family: 'Play', sans-serif;
 }
@@ -94,21 +89,48 @@ body {
     height: 100%;
 } */
 
-  .sidebarEdit {
+  /* .sidebarEdit {
     width: 50%;
     background: url('https://i.imgur.com/2kZthsz.jpeg');
     background-size: cover;
     background-repeat: no-repeat;
     border-radius: 10px 0 0 10px;
-  }
+  } */
 
-  .sidebarNew {
+  /* .sidebarNew {
     width: 50%;
     background: url('https://i.imgur.com/9qLpzGo.jpeg');
     background-size: cover;
     background-repeat: no-repeat;
     border-radius: 10px 0 0 10px;
+  } */
+
+
+.container2 {
+    height: auto;
+    width: auto;
+    margin: 30px;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    border: 1px solid #000000;
+    box-shadow: -20px 20px 30px -10px #555656;
+    background-color: whitesmoke;
+    padding: 20px;
+    font-family: 'Play', sans-serif;
   }
+
+/* .registration2 {
+    width: 100%;
+    background: #f9f9f9;
+    border-radius: 0 10px 10px 0;
+    padding: 15px;
+    font-family: 'Play', sans-serif;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+} */
 
 .userVenues {
     display: flex;
