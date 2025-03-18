@@ -14,7 +14,7 @@ html, body {
 body {
     display: flex;
     align-items: center;
-    /* justify-content: center; */
+    justify-content: center;
     flex-direction: column;
     background: rgb(238,174,233);
     background: radial-gradient(circle, rgba(238,174,233,1) 0%, rgba(87,85,189,1) 100%);
@@ -37,10 +37,12 @@ body {
 } */
 
 .container {
-    width: 40vw;
-    height: 10vw;
+    width: 60vw;
+    height: 40vw;
     margin: 50px auto;
     display: flex;
+    /* align-items: center; */
+    /* text-align: center; */
     border-radius: 10px;
     border: 1px solid #000000;
     box-shadow: -20px 20px 30px -10px #555656;
@@ -66,8 +68,8 @@ body {
   }
 
 .registration {
-    width: 50%;
-    height: auto;
+    width: 60vw;
+    height: 40vw;
     background: #f9f9f9;
     border-radius: 0 10px 10px 0;
     padding: 15px;
@@ -108,8 +110,8 @@ body {
 
 
 .container2 {
-    height: auto;
-    width: auto;
+    width: 60vw;
+    height: 40vw;
     margin: 30px;
     display: flex;
     align-items: center;
@@ -265,19 +267,21 @@ h1 {
 }
 
 .main-info {
-    display: flex;
+    display: center;
     align-items: center;
+    text-align: center;
     justify-content: space-between;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
     border: 3px solid rgb(33, 32, 32);
-    padding: 20px;
+    padding: 10px;
     background: #f9f9f9;
 }
 
 .main-info h3 {
     color: #000000;
     padding-right: 20px;
+    /* width: 50%; */
 }
 
 .fieldset h3 {
@@ -292,12 +296,12 @@ h1, h2, h3, h4 {
 
 .show-container img {
     border: 2px solid rgb(33, 32, 32);
-    /* align-items: center;   */
-    display: block;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    align-items: center;  
+    display: center;
+    margin: 10px;
+    /* margin-bottom: 20px;
     margin-left: auto;
-    margin-right: auto;
+    margin-right: auto; */
     width: 25%;
     /* padding: 20px 15px 10px 15px; */
 }
