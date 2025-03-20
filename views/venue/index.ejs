@@ -3,9 +3,13 @@
     <%- include('../partials/head.ejs') %>
     <body>
     <%- include('../partials/header.ejs') %>
-    
+
+    <div class="logout">
+        <a href="/user/logout"><button>Logout</button></a>
+    </div>
+
         <div class="userVenues">
-            <a href="/user/logout"><button>Logout</button></a>
+            <!-- <a href="/user/logout"><button>Logout</button></a> -->
                 <div class="listVenues">
                     <% for (Venue of venue) { %>
                         <div class="venueDisplay">
@@ -17,7 +21,9 @@
                         </div>
                     <% } %>
                 </div>
-                <h2><a href="/venues/new"><button>Add new Venue</button></a></h2>
+                <div class="addNew">
+                    <h2><a href="/venues/new"><button>Add new Venue</button></a></h2>
+                </div>
         </div>
     </body>
 </html>

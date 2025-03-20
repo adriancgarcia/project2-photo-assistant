@@ -4,10 +4,9 @@
     <body>
     <%- include('../partials/header.ejs') %>
 
-    <a href="/venues"><button>Back To Main</button></a>
         <div class="newContainer">
             <!-- <div class="sidebarEdit"></div> -->
-                <div class="newEntry">
+                <!-- <div class="newEntry"> -->
                     <h1>Edit Venue</h1>
                     <form action="/venues/<%= venue._id %>?_method=PUT" method="POST">
                         <fieldset class="account-info">
@@ -33,7 +32,8 @@
                             <input type="submit" class="submit"  value="Enter Edits" />
                         </fieldset>
                     </form>
-                </div>
+                    <a href="/venues"><button>Back To Main</button></a>
+                <!-- </div> -->
         </div>
     </body>
 </html>

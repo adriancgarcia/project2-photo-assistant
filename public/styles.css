@@ -12,10 +12,10 @@ html, body {
 }
 
 body {
-    display: flex;
+    /* display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
+    flex-direction: column; */
     background: rgb(238,174,233);
     background: radial-gradient(circle, rgba(238,174,233,1) 0%, rgba(87,85,189,1) 100%);
     background-repeat: no-repeat;
@@ -44,9 +44,8 @@ body {
     /* align-items: center; */
     /* text-align: center; */
     border-radius: 10px;
-    border: 1px solid #000000;
+    /* border: 1px solid #000000; */
     box-shadow: -20px 20px 30px -10px #555656;
-    
 }
   
 
@@ -110,30 +109,38 @@ body {
 
 
 .container2 {
-    width: 60vw;
-    height: 40vw;
-    margin: 30px;
+    width: 40vw;
+    height: 10vw;
+    margin: 50px auto;
     display: flex;
     align-items: center;
     border-radius: 10px;
     border: 1px solid #000000;
     box-shadow: -20px 20px 30px -10px #555656;
     background-color: whitesmoke;
-    padding: 20px;
+    /* padding: 20px; */
     font-family: 'Play', sans-serif;
   }
 
-/* .registration2 {
-    width: 100%;
-    background: #f9f9f9;
-    border-radius: 0 10px 10px 0;
-    padding: 15px;
-    font-family: 'Play', sans-serif;
+  /* .login {
     display: flex;
     align-items: center;
-    flex-direction: column;
     justify-content: center;
+    flex-direction: column;
+    padding: 20px 20px 40px 20px; 
 } */
+
+.access {
+    /* width: 60vw;
+    height: 40vw; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    padding: 20px 20px 40px 20px;
+    /* margin: 50px auto; */
+}
+
 
 .userVenues {
     display: flex;
@@ -146,10 +153,6 @@ body {
     margin: auto;
     width: auto;
     height: 100%;
-    /* background-image: url("https://i.imgur.com/qyx4uO7.jpeg"); */
-    /* background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover; */
 }
 
 .listVenues{
@@ -190,6 +193,18 @@ body {
     color: #f5f5f5;
 }
 
+.logout {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.addNew {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
 h1 {
     font-family: 'Play', sans-serif;
     font-weight: 500;
@@ -212,6 +227,8 @@ h1 {
 .account-info {
     margin: 20px;
     padding: 20px 0;
+    box-shadow: -20px 20px 30px -10px #555656;
+
 }
 
 .account-info label {
@@ -228,14 +245,6 @@ h1 {
     display: block;
 }
 
-.login {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    padding: 20px 20px 40px 20px; 
-}
-
 .submit {
     margin: 10px 0 10px 0;
     padding: 5px;
@@ -243,18 +252,11 @@ h1 {
     font-family: 'Play', sans-serif;
 }
 
-.signup {
+.show-container {
+    /* width: 60vw; */
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
-    padding: 20px 20px 40px 20px;
-}
-
-.show-container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
     flex-direction: row;
     flex-wrap: wrap;
     /* border: 3px solid rgb(33, 32, 32); */
@@ -273,9 +275,11 @@ h1 {
     justify-content: space-between;
     flex-direction: column;
     flex-wrap: wrap;
-    border: 3px solid rgb(33, 32, 32);
+    border: 1px solid rgb(33, 32, 32);
     padding: 10px;
     background: #f9f9f9;
+    box-shadow: -20px 20px 30px -10px #555656;
+
 }
 
 .main-info h3 {
@@ -309,17 +313,26 @@ h1, h2, h3, h4 {
 .newContainer {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    flex-direction: row;
+    justify-content: center;
+    /* flex-direction: row; */
     flex-wrap: wrap;
     /* border: 3px solid rgb(33, 32, 32); */
     padding: 20px;
     /* background: #f9f9f9; */
 }
 
+form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .newEntry h1 {
     color: #f5f5f5f5;
     padding-left: 40px;
+    display: flex;
+    align-items: center;
+    flex-direction: row
 }
 
 .account-info {
@@ -328,18 +341,11 @@ h1, h2, h3, h4 {
     justify-content: space-between;
     flex-direction: row;
     flex-wrap: wrap;
-    border: 2px solid rgb(33, 32, 32);
+    border: 1px solid rgb(33, 32, 32);
     padding: 10px;
     background: #f9f9f9;
     width: 50%;
 }
-
-
-/* img {
-    width: 50%;
-    height: auto;
-    padding: 0px 60px 0px 60px;
-} */
 
 button {
     /* padding: 5px 20px 5px 20px; */
@@ -397,11 +403,6 @@ button:hover {
 label {
     padding: 15px;
 }
-
-/* h1 {
-    color: whitesmoke;
-    font-family: 'Play', sans-serif;
-} */
 
 a {
     text-decoration: none;
